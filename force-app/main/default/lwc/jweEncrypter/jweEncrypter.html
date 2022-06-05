@@ -1,0 +1,13 @@
+<template>
+  <lightning-card title="Encrypt String with JWE">
+    <lightning-button label="Encrypt" slot="actions" disabled={disableEncryptBtn} onclick={encryptStringWithJwe}>
+    </lightning-button>
+    <p class="slds-p-horizontal_small">
+      <lightning-input type="text" onchange={handleStringToEncryptChanged} label="String to Encrypt"></lightning-input>
+    </p>
+    <p class="slds-p-horizontal_small">
+      <lightning-textarea label="Encrypted Text" value={encryptedString} disabled></lightning-textarea>
+    </p>
+    <p slot="footer"></p>
+  </lightning-card>
+</template>
