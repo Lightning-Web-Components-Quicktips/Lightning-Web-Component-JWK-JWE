@@ -2,6 +2,8 @@
 
 Simple POC for encrypting strings using JWE with a JWK using [JS-JOSE](https://github.com/square/js-jose)
 
+![demo](https://github.com/Lightning-Web-Components-Quicktips/Lightning-Web-Component-JWK-JWE/blob/main/demo.gif)
+
 Salesforce APEX *does not necessarily support necessary cryptographic functions* (?) to derivate JWKs from other types of Cryptographic Keys, though it maybe possible
 to store them in an Java Key-store (which is Supported by Salesforce) However, some APIs require that values be encrypted *before* they are sent to the server, or additionally this code could make it possible to store String-data at-rest in Salesforce in such a way that only someone with access to a private-key could read it.  
 
