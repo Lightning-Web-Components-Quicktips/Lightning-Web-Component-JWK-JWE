@@ -1,13 +1,13 @@
 # Lightning Web Component JWE Encryption
 
-Simple POC for encrypting strings using JWE with a JWK
+Simple POC for encrypting strings using JWE with a JWK using [JS-JOSE](https://github.com/square/js-jose)
 
 Salesforce APEX does not necessarily support necessary cryptographic functions to derivate JWKs from other types of Cryptographic Keys, though it maybe possible
-to store them in an Java Key-store (which is Supported by Salesforce) ?
+to store them in an Java Key-store (which is Supported by Salesforce)?
 
-For this demo I simply generated an SSH RSA Private/Public Key-pair in Java and output as a JWK :
+For this demo I simply generated an SSH RSA Private/Public Key-pair in Java and output as a JWK:
 
-Example Java for Generating a JWK, you will need (Nimbus JOSE+JWT)[https://connect2id.com/products/nimbus-jose-jwt]
+Example Java for Generating a JWK, you will need [Nimbus JOSE+JWT](https://connect2id.com/products/nimbus-jose-jwt)
 
 ```
 KeyPairGenerator rsaGen = KeyPairGenerator.getInstance("RSA");
